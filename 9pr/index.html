@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Management</h1>
+        <div class="form-container">
+            <form id="carForm">
+                <input type="text" id="carModel" placeholder="Model" required>
+                <input type="text" id="carBrand" placeholder="Brand" required>
+                <input type="number" id="carYear" placeholder="Year" required>
+                <input type="text" id="carColor" placeholder="Color" required>
+                <button type="submit">Add Car</button>
+            </form>
+        </div>
+        <div class="car-list">
+            <h2>Car List</h2>
+            <ul id="carList"></ul>
+        </div>
+    </div>
+
+    <!-- Modal for Editing Car -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="editCarForm">
+                <input type="text" id="editCarModel" placeholder="Model" required>
+                <input type="text" id="editCarBrand" placeholder="Brand" required>
+                <input type="number" id="editCarYear" placeholder="Year" required>
+                <input type="text" id="editCarColor" placeholder="Color" required>
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
